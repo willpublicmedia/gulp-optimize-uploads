@@ -15,5 +15,5 @@ Adds a task wrapper to imagemin-cli allowing lossless image minification in a si
 **Syntax:**
 
 ```bash
-gulp minify-images --imageDir /foo/bar/**/*.jpg
+gulp minify-images --imageDir '/foo/bar/**/*.jpg'
 ```
