@@ -4,7 +4,7 @@
     "description": "A collection of cleanup tasks for web uploads.",
     "main": "gulpfile.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "minify-images": "gulp minify-images"
     },
     "repository": {
         "type": "git",
