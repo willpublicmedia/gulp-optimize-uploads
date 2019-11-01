@@ -1,3 +1,4 @@
+var minimist = require('minimist');
 var gulp = require('gulp');
 var log = require('fancy-log');
 var imagemin = require('gulp-imagemin');
@@ -6,8 +7,11 @@ var config = {
     imageDir: './images/**/*'
 };
 
+var options = minimist(process.argv.slice(2), config);
+
 gulp.task('log-value', function (done) {
-    log(config.imageDir);
+    const workingdir = options.imageDir ? options.imageDir : config.imageDir;
+    log(workingdir);
     done();
 });
 
