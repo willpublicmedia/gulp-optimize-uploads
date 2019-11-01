@@ -1,0 +1,21 @@
+{
+    "name": "gulp-optimize-uploads",
+    "version": "1.0.0",
+    "description": "A collection of cleanup tasks for web uploads.",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.engr.illinois.edu/willpublicmedia/gulp-optimize-uploads.git"
+    },
+    "keywords": [
+        "gulp",
+        "imagemin",
+        "lossless"
+    ],
+    "author": "WILL Web Team <will-web@illinois.edu>",
+    "license": "NCSA",
+    "private": true
+}
