@@ -1,9 +1,15 @@
 var gulp = require('gulp');
+var log = require('fancy-log');
 var imagemin = require('gulp-imagemin');
 
 var config = {
     imageDir: './images/**/*'
 };
+
+gulp.task('log-value', function (done) {
+    log(config.imageDir);
+    done();
+});
 
 /**
  * Wrapper around gulp-imagemin allowing minification in place

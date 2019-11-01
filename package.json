@@ -19,6 +19,7 @@
     "license": "NCSA",
     "private": true,
     "devDependencies": {
+        "fancy-log": "1.3.3",
         "gulp": "4.0.2",
         "gulp-imagemin": "6.1.1"
     }
