@@ -1,26 +1,29 @@
 var minimist = require('minimist');
 var gulp = require('gulp');
-var log = require('fancy-log');
 var imagemin = require('gulp-imagemin');
 
-var config = {
+/**
+ * Set task defaults.
+ */
+var defaults = {
     imageDir: './images/**/*'
 };
 
-var options = minimist(process.argv.slice(2), config);
-
-gulp.task('log-value', function (done) {
-    const workingdir = options.imageDir ? options.imageDir : config.imageDir;
-    log(workingdir);
-    done();
-});
+/**
+ * Parse command line arguments.
+ */
+var options = minimist(process.argv.slice(2), defaults);
 
 /**
  * Wrapper around gulp-imagemin allowing minification in place
  * instead of requiring separate input and output directories.
  */
 gulp.task('minify-images', function () {
-    return gulp.src(config.imageDir)
+    const workingdir = options.imageDir ?
+        options.imageDir :
+        defaults.imageDir;
+    
+    return gulp.src(workingdir)
         .pipe(imagemin())
         .pipe(gulp.dest(function (file) {
             return file.base;
