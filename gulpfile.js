@@ -1,5 +1,6 @@
 var minimist = require('minimist');
 var gulp = require('gulp');
+var plumber = require('gulp-plumber');
 var imagemin = require('gulp-imagemin');
 
 /**
@@ -24,6 +25,7 @@ gulp.task('minify-images', function () {
         defaults.imageDir;
     
     return gulp.src(workingdir)
+        .pipe(plumber())
         .pipe(imagemin())
         .pipe(gulp.dest(function (file) {
             return file.base;
