@@ -23,7 +23,7 @@ var options = minimist(process.argv.slice(2), defaults);
 gulp.task('minify-images', function () {
     const plugins = [
         imagemin.gifsicle(),
-        mozjpeg(),
+        mozjpeg({ quality: 100 }),
         imagemin.optipng(),
         imagemin.svgo()
     ];
