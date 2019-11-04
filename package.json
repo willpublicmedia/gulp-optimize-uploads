@@ -1,6 +1,6 @@
 {
     "name": "gulp-optimize-uploads",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A collection of cleanup tasks for web uploads.",
     "main": "gulpfile.js",
     "scripts": {
