@@ -18,7 +18,7 @@
     "author": "WILL Web Team <will-web@illinois.edu>",
     "license": "NCSA",
     "private": true,
-    "devDependencies": {
+    "dependencies": {
         "gulp": "4.0.2",
         "gulp-imagemin": "6.1.1",
         "gulp-plumber": "1.2.1",
