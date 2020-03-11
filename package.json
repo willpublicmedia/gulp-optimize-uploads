@@ -1,6 +1,6 @@
 {
     "name": "gulp-optimize-uploads",
-    "version": "1.0.4",
+    "version": "1.0.3",
     "description": "A collection of cleanup tasks for web uploads.",
     "main": "gulpfile.js",
     "scripts": {
@@ -19,7 +19,6 @@
     "license": "NCSA",
     "private": true,
     "dependencies": {
-        "gifsicle": "5.0.0",
         "gulp": "4.0.2",
         "gulp-imagemin": "7.1.0",
         "gulp-plumber": "1.2.1",
